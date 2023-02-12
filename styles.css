@@ -11,6 +11,8 @@ body {
   margin-top: 1%;
 }
 
+/* Header & Nav Sections CSS */
+
 header > img {
   height: 300px;
   display: block;
@@ -30,6 +32,8 @@ nav li {
   font-size: 2rem;
   padding: 0 1rem;
 }
+
+/* Main Section CSS */
 
 #promotion-banner {
   margin-top: 1%;
@@ -60,6 +64,7 @@ h2 {
   font-size: 2.5rem;
 }
 
+/* Footer Section CSS */
 
 footer {
   display: flex;
@@ -75,4 +80,5 @@ footer {
 
 #copyright {
   border-top: 1px solid black;
+  padding-top: 0.5%;
 }
