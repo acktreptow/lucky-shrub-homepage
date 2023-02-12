@@ -14,7 +14,7 @@ body {
 /* Header & Nav Sections CSS */
 
 header > img {
-  height: 300px;
+  height: 25vh;
   display: block;
   margin: 0 auto;
 }
@@ -23,23 +23,53 @@ nav > ul {
   list-style: none;
   text-align: center;
   margin-top: 1%;
-  background-color: azure;
+  background-color: teal;
   display: flex;
   justify-content: center;
+  border-radius: 2rem;
 }
 
 nav li {
-  font-size: 2rem;
-  padding: 0 1rem;
+  padding: 0.5% 0.8%;
+}
+
+a {
+  font-size: 1.7rem;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  font-size: 1.75rem;
+  text-decoration: underline;
+}
+
+a:active {
+  font-size: 1.75rem;
+  text-decoration: underline;
+  text-shadow: -2px 2px 5px black;
 }
 
 /* Main Section CSS */
 
 #promotion-banner {
   margin-top: 1%;
-  display: flex;
   height: 50vh;
   background-image: url(https://encantadaliving.com/wp-content/uploads/2020/04/HSL-April-Blog.jpg);
+  position: relative;
+}
+
+#promotion-article {
+  width: 100%;
+  border-radius: 1rem;
+  position: absolute;
+  bottom: 0;
+  margin: 2% auto;
+  opacity: 95%
+}
+
+#promotion-article > h1 {
+  font-size: 2.5rem;
 }
 
 #main-section {
@@ -75,7 +105,7 @@ footer {
 }
 
 #logo-footer {
-  height: 200px;
+  height: 15vh;
 }
 
 #copyright {
