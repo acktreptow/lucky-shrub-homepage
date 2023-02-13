@@ -18,12 +18,12 @@ header > img {
 }
 
 nav > ul {
-  border-radius: 2rem;
+  margin-top: 2%;
   background-color: teal;
+  border-radius: 2rem;
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 2%;
 }
 
 nav li {
@@ -31,9 +31,9 @@ nav li {
 }
 
 a {
+  color: white;
   font-size: 1.75rem;
   text-decoration: none;
-  color: white;
 }
 
 a:hover {
@@ -48,9 +48,9 @@ a:active {
 /* Main Section CSS */
 
 #promotion-banner {
-  border-radius: 2rem;
-  height: 50vh;
   margin-top: 2%;
+  height: 50vh;
+  border-radius: 2rem;
   background-image: url(/Images/promotion-banner-img.jpg);
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -59,31 +59,35 @@ a:active {
 }
 
 #promotion-article {
+  margin: 2% auto;
   background-color: teal;
-  width: 80%;
   border-radius: 2rem;
   position: absolute;
+  width: 50%;
+  right: 25%;
   bottom: 0;
-  margin: 2% auto;
-  opacity: 95%;
-  right: 10%;
+  opacity: 97%;
   padding: 0.75% 0;
 }
 
 #promotion-article > h1 {
-  font-size: 2.2rem;
-  color: white;
+  font-size: 2.25rem;
 }
 
 #promotion-article > p {
   font-size: 1.5rem;
+  margin-top: 0.5%;
+}
+
+#promotion-article > h1,
+#promotion-article > p {
   color: white;
-  text-align: center;
 }
 
 #promotion-link {
-  text-decoration: underline;
   font-size: 1.75rem;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 
 #main-section {
