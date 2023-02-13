@@ -9,6 +9,10 @@ body {
   margin: 1.5% 10%;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Header & Nav Sections CSS */
 
 header > img {
@@ -21,7 +25,6 @@ nav > ul {
   margin-top: 2%;
   background-color: teal;
   border-radius: 2rem;
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -30,22 +33,26 @@ nav li {
   padding: 0.75%;
 }
 
-a {
+.nav-link,
+#promotion-link {
   color: white;
   font-size: 1.75rem;
   text-decoration: none;
 }
 
-a:hover {
+.nav-link:hover {
   text-decoration: underline;
 }
 
-a:active {
+.nav-link:active,
+#promotion-link:active {
   font-size: 1.8rem;
   text-shadow: -2px 2px 5px black;
 }
 
 /* Main Section CSS */
+
+/* Promotion Section */
 
 #promotion-banner {
   margin-top: 2%;
@@ -68,6 +75,10 @@ a:active {
   bottom: 0;
   opacity: 97%;
   padding: 0.75% 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 #promotion-article > h1 {
@@ -90,58 +101,71 @@ a:active {
   text-transform: uppercase;
 }
 
+/* Main Section */
+
 #main-section {
-  display: flex;
-  margin-top: 1%;
+  margin-top: 2%;
   height: 60vh;
+  display: flex;
   justify-content: center;
 }
 
-article {
-  background-color: whitesmoke;
+.main-section-article {
   margin: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 2rem;
   width: 33.3%;
+  min-width: 300px;
+  background-color: whitesmoke;
+  border-radius: 2rem;
 }
 
 h2 {
-  padding-top: 5%;
+  margin-top: 5%;
+  font-size: 2.25rem;
   text-align: center;
-  font-size: 2.5rem;
-  color: rgb(0, 0, 0);
 }
 
 .img-div {
+  margin-top: 2.5%;
   height: 30vh;
   width: 90%;
+  border-radius: 1rem;
   display: flex;
-  overflow: hidden;
   justify-content: center;
+  overflow: hidden;
 }
 
-.img-div img {
-  flex-shrink: 1;
-}
-
-.main-section-paragraph,
-article > ul {
-  margin-top: 4%;
-  padding: 0 5%;
+.main-section-paragraph {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 90%;
   font-size: 1.25rem;
   list-style: none;
+}
+
+.main-section-paragraph + a,
+.main-section-paragraph + ul {
+  width: 90%;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+span {
+  font-weight: bold;
 }
 
 /* Footer Section CSS */
 
 footer {
+  margin: 2% 1.5%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: end;
-  margin: 1% 1.5%;
   font-size: 1.5rem;
+  position: relative;
 }
 
 #logo-footer {
@@ -151,4 +175,32 @@ footer {
 #copyright {
   border-top: 1px solid black;
   padding-top: 0.5%;
+}
+
+@media screen and (max-width: 700px) {
+  nav > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #promotion-article {
+    width: 100%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #main-section {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
