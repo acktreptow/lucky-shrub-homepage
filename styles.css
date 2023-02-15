@@ -14,7 +14,25 @@ ul {
   list-style: none;
 }
 
-/* Header & Nav Sections CSS */
+nav > ul,
+#promotion-article {
+  background-color: teal;
+}
+
+nav > ul,
+#promotion-banner,
+#promotion-article,
+.main-section-article {
+  border-radius: 2rem;
+}
+
+nav > ul,
+#promotion-banner,
+#main-section,
+.img-div,
+.main-section-paragraph {
+  margin-top: 2%;
+}
 
 header > img {
   height: 25vh;
@@ -23,9 +41,6 @@ header > img {
 }
 
 nav > ul {
-  margin-top: 2%;
-  background-color: teal;
-  border-radius: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -52,25 +67,18 @@ nav li {
   transition: 0.3s;
 }
 
-/* Main Section CSS */
-
-/* Promotion Section */
-
 #promotion-banner {
-  margin-top: 2%;
   height: 50vh;
-  border-radius: 2rem;
   background-image: url(/Images/promotion-banner-img.jpg);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: cover;
   position: relative;
+  display: flex;
 }
 
 #promotion-article {
   margin: 2% auto;
-  background-color: teal;
-  border-radius: 2rem;
   position: absolute;
   width: 50%;
   right: 25%;
@@ -83,29 +91,24 @@ nav li {
   align-items: center;
 }
 
+#promotion-article > h1 {
+  animation: grow 3s linear forwards;
+}
 
 @keyframes grow {
   from {
     transform: scale(1);
   }
-  
+
   to {
     transform: scale(1.5);
   }
 }
 
-#promotion-article > h1 {
-  font-size: 1.5rem;
-  animation: grow 3s linear forwards;
-}
-
+#promotion-article > h1,
 #promotion-article > p {
   font-size: 1.5rem;
   margin-top: 0.5%;
-}
-
-#promotion-article > h1,
-#promotion-article > p {
   color: white;
 }
 
@@ -115,10 +118,7 @@ nav li {
   text-transform: uppercase;
 }
 
-/* Main Section */
-
 #main-section {
-  margin-top: 2%;
   height: 60vh;
   display: flex;
   justify-content: center;
@@ -130,9 +130,8 @@ nav li {
   flex-direction: column;
   align-items: center;
   width: 33.3%;
-  min-width: 300px;
+  min-width: 350px;
   background-color: whitesmoke;
-  border-radius: 2rem;
 }
 
 h2 {
@@ -142,7 +141,6 @@ h2 {
 }
 
 .img-div {
-  margin-top: 2.5%;
   height: 30vh;
   width: 90%;
   border-radius: 1rem;
@@ -152,7 +150,6 @@ h2 {
 }
 
 .main-section-paragraph {
-  margin-top: 2.5%;
   margin-bottom: 2.5%;
   width: 90%;
   font-size: 1.25rem;
@@ -164,6 +161,8 @@ h2 {
   width: 90%;
   font-size: 1.25rem;
   text-align: center;
+  margin-top: 1%;
+  margin-bottom: 5%;
 }
 
 #motto {
@@ -174,8 +173,6 @@ h2 {
 span {
   font-weight: bold;
 }
-
-/* Footer Section CSS */
 
 footer {
   margin: 2% 1.5%;
@@ -196,6 +193,8 @@ footer {
   padding-top: 0.5%;
 }
 
+/* Media Queries for Responsive Design */
+
 @media screen and (max-width: 700px) {
   nav > ul {
     flex-direction: column;
@@ -203,17 +202,18 @@ footer {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 950px) {
   #promotion-article {
     width: 100%;
     right: 0;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   #main-section {
     flex-wrap: wrap;
     height: auto;
+    margin-bottom: 5%;
   }
 }
 
