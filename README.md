@@ -20,7 +20,7 @@ Overall, this was a fun project that improved my HTML/CSS skills. Especially wit
 
 To run the project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/acktreptow/meta-course-4-project.git`
+1. Clone the repository: `git clone https://github.com/acktreptow/lucky-shrub-homepage.git`
 2. Navigate to the project directory: `cd lucky-shrub-homepage`
 3. Open the `index.html` file in your preferred web browser.
 
