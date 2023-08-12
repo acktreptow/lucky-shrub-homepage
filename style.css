@@ -71,7 +71,7 @@ nav li {
 #promotion-banner {
   height: 50vh;
   display: flex;
-  background-image: url(./Images/promotion-banner-img.jpg);
+  background-image: url(../Images/promotion-banner-img.jpg);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-size: cover;
