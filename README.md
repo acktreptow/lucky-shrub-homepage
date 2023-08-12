@@ -2,7 +2,7 @@
 
 Welcome to Lucky Shrub! Arizona's own garden design firm.
 
-This was the first peer reviewed project I completed for Meta's Front-End Developer course. We were tasked with creating a homepage for one of 4 companies.
+This was the first peer reviewed project I completed for Meta's Front-End Developer course. We were tasked with creating a homepage for one of 4 companies, and I decided to design the Lucky Shrub homepage as that seemed to be the least popular choice among my peers.
 
 ## Technologies used:
 
