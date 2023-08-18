@@ -26,7 +26,7 @@ To run the project locally, follow these steps:
 
 ## Future Enhancements
 
-I would like to add even more JavaScript functionality at someone point, but I am very happy with where it currently stands and so a lot of other projects will take priority.
+I would like to add even more JavaScript functionality at some point, but I am very happy with where it currently stands and so a lot of other projects will take priority.
 
 ## Contact
 
