@@ -209,20 +209,35 @@ footer {
   nav > ul {
     flex-direction: column;
     align-items: center;
+    margin: 20px 0;
   }
 }
 
 @media screen and (max-width: 950px) {
+  header > img {
+    height: 20vh;
+  }
+
   #promotion-article {
-    width: 100%;
-    right: 0;
+    width: 80%;
+    right: 10%;
+  }
+
+  #promotion-article h1 {
+    font-size: 0.75em;
+    padding-top: 3px;
+  }
+
+  #promotion-article p {
+    font-size: 1em;
   }
 }
 
 @media screen and (max-width: 1200px) {
   #info-section {
-    flex-wrap: wrap;
-    margin-bottom: 5%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }
 
@@ -231,5 +246,6 @@ footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
 }
